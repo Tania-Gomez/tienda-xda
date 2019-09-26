@@ -1,0 +1,70 @@
+.col {
+  margin: 0;
+}
+
+.featured {
+  height: 85vh;
+  overflow: hidden;
+  background-image: url(../img/main-photo-lg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+
+.featured-sm {
+  display: grid;
+}
+
+@media (min-width:1200px){
+  .featured {
+    display: grid;
+  }
+  .featured-sm {
+    display: none;
+  }
+}
+
+.about, .newsletter {
+  padding: 2.5rem 5rem 2.5rem 2.5rem;
+}
+
+.about {
+  color: $smoky-black;
+  height: 60vh;
+}
+
+.newsletter {
+  background-color: $smoky-black;
+  color: $white;
+  position: relative;
+  height: 25vh;
+}
+
+.newsletter__form {
+  padding-top: 1rem;
+
+  input {
+    margin-top: 0.5rem;
+    width: 90%;
+    padding: 0.2rem;
+    visibility: visible;
+  }
+}
+
+.suscribe {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background-color: $white;
+  top: 0;
+  right: 0;
+  padding-right: 0.5em;
+  /* vertical writing-mode */
+  writing-mode: vertical-rl;
+
+  h4 {
+    text-align: center;
+    color: $smoky-black;
+  }
+}
